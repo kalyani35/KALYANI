@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Disease Prediction</h1>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#diabetes">Diabetes Prediction</a></li>
+            <li><a href="#heart_disease">Heart Disease Prediction</a></li>
+            <li><a href="#parkinsons">Parkinson's Disease Prediction</a></li>
+            <li><a href="#lung_cancer">Lung Cancer Prediction</a></li>
+            <li><a href="#hypo_thyroid">Hypo-Thyroid Prediction</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="diabetes">
+            <h2>Diabetes Prediction</h2>
+            <form action="" method="POST" class="form-container">
+                <label for="Pregnancies">Number of Pregnancies:</label>
+                <input type="number" id="Pregnancies" name="Pregnancies" required>
+
+                <label for="Glucose">Glucose Level:</label>
+                <input type="number" id="Glucose" name="Glucose" required>
+
+                <label for="BloodPressure">Blood Pressure Value:</label>
+                <input type="number" id="BloodPressure" name="BloodPressure" required>
+
+                <label for="SkinThickness">Skin Thickness Value:</label>
+                <input type="number" id="SkinThickness" name="SkinThickness" required>
+
+                <label for="Insulin">Insulin Level:</label>
+                <input type="number" id="Insulin" name="Insulin" required>
+
+                <label for="BMI">BMI Value:</label>
+                <input type="number" id="BMI" name="BMI" required>
+
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function Value:</label>
+                <input type="number" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" required>
+
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" name="Age" required>
+
+                <button type="submit" class="submit-button">Predict</button>
+            </form>
+        </section>
+
+        <section id="heart_disease">
+            <h2>Heart Disease Prediction</h2>
+            <form action="" method="POST" class="form-container">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="sex">Sex (1 = male, 0 = female):</label>
+                <input type="number" id="sex" name="sex" required>
+
+                <label for="cp">Chest Pain Types (0, 1, 2, 3):</label>
+                <input type="number" id="cp" name="cp" required>
+
+                <label for="trestbps">Resting Blood Pressure:</label>
+                <input type="number" id="trestbps" name="trestbps" required>
+
+                <label for="chol">Serum Cholesterol:</label>
+                <input type="number" id="chol" name="chol" required>
+
+                <label for="fbs">Fasting Blood Sugar > 120 mg/dl (1 = true, 0 = false):</label>
+                <input type="number" id="fbs" name="fbs" required>
+
+                <label for="restecg">Resting Electrocardiographic Results:</label>
+                <input type="number" id="restecg" name="restecg" required>
+
+                <button type="submit" class="submit-button">Predict</button>
+            </form>
+        </section>
+
+        <section id="parkinsons">
+            <h2>Parkinson's Disease Prediction</h2>
+            <form action="" method="POST" class="form-container">
+                <label for="fo">MDVP:Fo(Hz):</label>
+                <input type="number" id="fo" name="fo" required>
+
+                <label for="fhi">MDVP:Fhi(Hz):</label>
+                <input type="number" id="fhi" name="fhi" required>
+
+                <label for="Jitter_percent">MDVP:Jitter(%):</label>
+                <input type="number" id="Jitter_percent" name="Jitter_percent" required>
+
+                <label for="Shimmer">MDVP:Shimmer:</label>
+                <input type="number" id="Shimmer" name="Shimmer" required>
+
+                <button type="submit" class="submit-button">Predict</button>
+            </form>
+        </section>
+
+        <section id="lung_cancer">
+            <h2>Lung Cancer Prediction</h2>
+            <form action="" method="POST" class="form-container">
+                <label for="GENDER">Gender (1 = Male, 0 = Female):</label>
+                <input type="number" id="GENDER" name="GENDER" required>
+
+                <label for="AGE">Age:</label>
+                <input type="number" id="AGE" name="AGE" required>
+
+                <label for="SMOKING">Smoking (1 = Yes, 0 = No):</label>
+                <input type="number" id="SMOKING" name="SMOKING" required>
+
+                <button type="submit" class="submit-button">Predict</button>
+            </form>
+        </section>
+
+        <section id="hypo_thyroid">
+            <h2>Hypo-Thyroid Prediction</h2>
+            <form action="" method="POST" class="form-container">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="sex">Sex (1 = Male, 0 = Female):</label>
+                <input type="number" id="sex" name="sex" required>
+
+                <label for="on_thyroxine">On Thyroxine (1 = Yes, 0 = No):</label>
+                <input type="number" id="on_thyroxine" name="on_thyroxine" required>
+
+                <button type="submit" class="submit-button">Predict</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Disease Prediction | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
